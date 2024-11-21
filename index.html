@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página de comida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>¡Bienvenido a mi pagina de comida!</h1>
+    <p>Aquí encontrarás la comida mas saludable para tu familia.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <img src="img/prueba.jpeg" alt="Postre delicioso">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Comida Saludable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Menú de Comida Saludable</h1>
+    </header>
+
+    <main>
+        <!-- Sección de Postres -->
+        <section id="postres">
+            <h2>Postres</h2>
+            <div class="menu-item">
+                <span>Bites de frutos rojos congelados cubiertos de yogurt</span>
+                <span class="precio" contenteditable="true">[30$]</span>
+                <button onclick="agregarAlCarrito('Bites de frutos rojos')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Gelatina con trocitos de fruta</span>
+                <span class="precio" contenteditable="true">[20$]</span>
+                <button onclick="agregarAlCarrito('Gelatina con fruta')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Plátanos cubiertos de chocolate oscuro y nuez</span>
+                <span class="precio" contenteditable="true">[35$]</span>
+                <button onclick="agregarAlCarrito('Plátanos con chocolate')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <!-- Sección de Bebidas -->
+        <section id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="menu-item">
+                <span>Naranjada</span>
+                <span class="precio" contenteditable="true">[25$]</span>
+                <button onclick="agregarAlCarrito('Naranjada')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Limonada</span>
+                <span class="precio" contenteditable="true">[20$]</span>
+                <button onclick="agregarAlCarrito('Limonada')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Jamaica</span>
+                <span class="precio" contenteditable="true">[20$]</span>
+                <button onclick="agregarAlCarrito('Jamaica')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <!-- Sección de Plato Fuerte -->
+        <section id="plato-fuerte">
+            <h2>Plato Fuerte</h2>
+            <div class="menu-item">
+                <span>Chilaquiles verdes con pollo, lechuga, queso y crema</span>
+                <span class="precio" contenteditable="true">[45$]</span>
+                <button onclick="agregarAlCarrito('Chilaquiles verdes')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <!-- Sección de Acompañamiento -->
+        <section id="acompaniamiento">
+            <h2>Acompañamiento</h2>
+            <div class="menu-item">
+                <span>Spaguetti</span>
+                <span class="precio" contenteditable="true">[35$]</span>
+                <button onclick="agregarAlCarrito('Spaguetti')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Puré de coliflor</span>
+                <span class="precio" contenteditable="true">[30$]</span>
+                <button onclick="agregarAlCarrito('Puré de coliflor')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Ensalada (lechuga, manzana, elote, zanahoria, aguacate y garbanzos)</span>
+                <span class="precio" contenteditable="true">[50$]</span>
+                <button onclick="agregarAlCarrito('Ensalada')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Frijoles refritos</span>
+                <span class="precio" contenteditable="true">[30$]</span>
+                <button onclick="agregarAlCarrito('Frijoles refritos')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Pechuga de pollo empanizada con amaranto</span>
+                <span class="precio" contenteditable="true">[45$]</span>
+                <button onclick="agregarAlCarrito('Pechuga empanizada')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <!-- Sección de Aderezos -->
+        <section id="aderezos">
+            <h2>Aderezos</h2>
+            <div class="menu-item">
+                <span>Matcha</span>
+                <span class="precio" contenteditable="true">[25$]</span>
+                <button onclick="agregarAlCarrito('Matcha')">Agregar al carrito</button>
+            </div>
+            <div class="menu-item">
+                <span>Catsup</span>
+                <span class="precio" contenteditable="true">[10$]</span>
+                <button onclick="agregarAlCarrito('Catsup')">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <!-- Sección del carrito -->
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <button id="pagar-ahora" onclick="pagarAhora()">Pagar ahora</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Menú de Comida Saludable. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const listaCarrito = document.getElementById('lista-carrito');
+
+        function agregarAlCarrito(item) {
+            const li = document.createElement('li');
+            li.textContent = item;
+            listaCarrito.appendChild(li);
+
+        }
+    </script>
+  </body>
+  </html>

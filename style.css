@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    color: #7f8c8d;
+}
+body {
+    background-color: #ffe4b5; /* Color arena claro */
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+.menu-item span {
+    flex: 1;
+}
+
+.precio {
+    font-weight: bold;
+    color: #4CAF50;
+    margin-right: 1em;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+#carrito ul {
+    list-style-type: none;
+    padding: 0;
+}
+#pagar-ahora {
+    background-color: #4CAF50; /* Color verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#pagar-ahora:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el ratón */
+}
